@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 2fr 2fr 2fr;
+            gap: 20px;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+        .header {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .text-label {
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .spectrum {
+            width: 100%;
+            height: auto;
+            background-color: #ddd;
+        }
+        .audio-player {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .column {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 表头 -->
+    <div class="grid-container">
+        <div class="header">Text Query</div>
+        <div class="header">Mixed Sound</div>
+        <div class="header">Original Sound</div>
+        <div class="header">Resource Sound</div>
+    </div>
+
+    <!-- 第一行 -->
+    <div class="grid-container">
+        <div class="text-label">"Someone is walking on the ground covered with fallen leaves, which makes crunchy sounds."</div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/1/remix.png" alt="Mixture Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/1/remix.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/1/sources.png" alt="Separation Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/1/leafStep.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/1/output.png" alt="Target Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/1/output.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第二行 -->
+    <div class="grid-container">
+        <div class="text-label">“Rain is pouring down, and thunder is rumbling during the thunderstorm.”</div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/2/remix.png" alt="Mixture Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/2/remix.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/2/sources.png" alt="Separation Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/2/thunderRain.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/2/output.png" alt="Target Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/2/output.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第三行 -->
+    <div class="grid-container">
+        <div class="text-label">“A bird's call pierces through the roar of other animals in the background.”</div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/3/remix.png" alt="Mixture Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/3/remix.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/3/sources.png" alt="Separation Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/3/birdRoar.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/3/output.png" alt="Target Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/3/output.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+    <!-- 第四行 -->
+    <div class="grid-container">
+        <div class="text-label">“A group of people are walking and talking, their footsteps and occasional whistles blending with the bounce of a ping-pong ball during a lively game.”</div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/4/remix.png" alt="Mixture Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/4/remix.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/4/sources.png" alt="Separation Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/4/ballsWhisperPeople.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+        <div class="column">
+            <div class="spectrum"><img src="samples/4/output.png" alt="Target Spectrum 1"></div>
+            <div class="audio-player">
+                <audio controls>
+                    <source src="samples/4/output.wav" type="audio/wav">
+                    sound not supported.
+                </audio>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
