@@ -51,7 +51,7 @@
         <div class="header">Text Query</div>
         <div class="header">Mixed Sound</div>
         <div class="header">Original Sound</div>
-        <div class="header">Resource Sound</div>
+        <div class="header">Separated Sound</div>
     </div>
 
     <!-- 第一行 -->
